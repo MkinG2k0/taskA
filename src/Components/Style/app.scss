@@ -1,0 +1,135 @@
+@use "mix";
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('../../../public/font/Nunito/Nunito-Medium.eot');
+  src: url('../../../public/font/Nunito/Nunito-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../../../public/font/Nunito/Nunito-Medium.woff2') format('woff2'),
+  url('../../../public/font/Nunito/Nunito-Medium.woff') format('woff'),
+  url('../../../public/font/Nunito/Nunito-Medium.ttf') format('truetype'),
+  url('../../../public/font/Nunito/Nunito-Medium.svg#Nunito-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: mix.$color-bg;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Nunito', sans-serif;
+  word-break: break-word;
+  line-height: 2rem;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.list {
+  max-width: 30rem;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input {
+  border: none;
+  width: 100%;
+  padding: 0 .5rem;
+  border-radius: .3rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  transition: .1s all;
+
+  &:focus {
+    outline-width: 0;
+    box-shadow: 0 0 0 3px mix.$color-base;
+  }
+}
+
+button {
+  background: none;
+  font-size: 2rem;
+  font-family: 'Nunito', sans-serif;
+  padding: .5rem;
+  border-radius: .3rem;
+  border: 0;
+  height: 100%;
+  box-shadow: 0 0 0 .18rem mix.$color-base;
+  transition: .1s all;
+}
+
+.checkbox {
+  background: none;
+  font-size: 2rem;
+  font-family: 'Nunito', sans-serif;
+  padding: .5rem;
+  border-radius: .3rem;
+  border: 0;
+  box-shadow: 0 0 0 .18rem mix.$color-base;
+  transition: .1s all;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.item {
+  background: mix.$color-bg-card;
+  border-radius: .3rem;
+  padding: .7rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .2rem;
+  justify-content: space-between;
+  align-items: center;
+
+  .colText {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+
+    .time {
+      color: mix.$color-gray;
+      font-size: .8rem;
+    }
+  }
+}
+
+.wrapItem {
+  position: relative;
+}
+
+.removeBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  box-shadow: 0 0 0 .18rem #d44343;
+}
+
+.text {
+  flex: 1;
+}
+
+.checked {
+  background: mix.$color-base;
+}
+
+.rightSide {
+  display: flex;
+}

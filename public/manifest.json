@@ -1,0 +1,26 @@
+{
+  "short_name": "taskA",
+  "name": "taskApp",
+  "icons": [
+    {
+      "src": "./logo/logo_64.png",
+      "type": "image/x-icon",
+      "sizes": "64x64"
+    },
+    {
+      "src": "./logo/logo_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./logo/logo_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "id": "/",
+  "display": "standalone",
+  "theme_color": "#304FFE",
+  "background_color": "#304FFE"
+}

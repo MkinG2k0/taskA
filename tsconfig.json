@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "target": "ESNext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "noImplicitAny": false,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "entities/*": [
+        "entities/*"
+      ]
+    },
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "esnext"
+    ],
+    "plugins": [
+    ],
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

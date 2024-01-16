@@ -1,0 +1,8 @@
+.next
+.idea
+.yarn
+.eslintrc.js
+build
+dist
+node_modules
+cypress
